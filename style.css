@@ -1,0 +1,130 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car {
+    padding: 45px;
+    width: 300px;
+}
+
+.car h1 {
+    color: white;
+    margin-top: 30px;
+}
+.car p {
+    color: rgba(248, 238, 238, 0.67);
+    line-height: 1.4;
+}
+
+.car button {
+    border: 2px solid #FFF;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 10px;
+    width: 120px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.sedan {
+    background-color: #E28525;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+}
+
+.sedan button {
+    color: #E28525;
+}
+
+
+.sedan button:active {
+    background-color: #E28525;
+    color: white;
+}
+
+
+.suvs {
+    background-color: #016972;
+}
+
+.suvs button {
+    color: #016972;
+}
+
+.suvs button:active {
+    background-color: #016972;
+    color: white;
+}
+
+
+.luxury {
+    background-color: #00403F;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -ms-border-radius: 0px 10px 10px 0px;
+    -o-border-radius: 0px 10px 10px 0px;
+}
+
+.luxury button {
+    color: #00403F
+}
+
+.luxury button:active {
+    background-color: #00403F;
+    color: white;
+}
+
+@media (max-width: 905px) {
+    body  {
+        justify-content: center;
+        align-items: normal;
+    }
+    main {
+        display: block;
+    }
+    .car {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .sedan {
+        border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        -ms-border-radius: 10px 10px 0px 0px;
+        -o-border-radius: 10px 10px 0px 0px;
+    }
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
+        -webkit-border-radius: 0px 0px 10px 10px;
+        -moz-border-radius: 0px 0px 10px 10px;
+        -ms-border-radius: 0px 0px 10px 10px;
+        -o-border-radius: 0px 0px 10px 10px;
+}
+}
+
+
